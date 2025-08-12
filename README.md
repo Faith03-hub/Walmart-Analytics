@@ -1,25 +1,72 @@
-# Walmart-Analytics
-Walmart Sales Project
+🛒# Walmart Sales Analytics
+End-to-End Retail Insights with Python & Power BI
 
-Description: In this project, you will clean a dataset containing Walmart sales data and analyze sales, unemployment rate, CPI, fuel price, and other fields.
+📌 ## Project Overview
+This project explores Walmart’s weekly sales data to uncover trends, correlations, and business insights using both Python and Power BI. It demonstrates a full analytics workflow—from raw data cleaning to interactive dashboard storytelling.
 
-Difficulty: Medium
+🧹 ## Data Cleaning (Python)
+Using Python, I transformed the raw dataset to meet the following criteria:
 
-Data download: https://www.kaggle.com/datasets/mikhail1681/walmart-sales 
+Dates converted to MM-DD-YYYY format
 
-## Data Cleaning Practice: 
-Using Python, I cleaned the data to meet the following criteria:
-- Data is sorted first by store number (ascending) and second by date (ascending)
-- Date is in the format MM-DD-YYYY
-- Weekly Sales is rounded to the nearest 2 decimal places
-- Temperature is rounded to the nearest whole number
-- Fuel Price is rounded to the nearest 2 decimal places
-- CPI is rounded to the nearest 3 decimal places
-- Unemployment is rounded to the nearest 3 decimal places
-- Ensure that there is no missing data
+Sorted by Store (ascending) and Date (ascending)
 
-## Business Questions:
-- Which holidays affect weekly sales the most?
-- Which stores in the dataset have the lowest and highest unemployment rate?  What factors do you think are impacting the unemployment rate?
-- Is there any correlation between CPI and Weekly Sales?  How does the correlation differ when the Holiday Flag is 0 versus when the Holiday Flag is 1?
-- Why do you think Fuel Price is included in this dataset?  What conclusions can be made about Fuel Price compared to any of the other fields?
+Rounded values for clarity:
+
+Weekly_Sales: 2 decimal places
+
+Temperature: nearest whole number
+
+Fuel_Price: 2 decimal places
+
+CPI & Unemployment: 3 decimal places
+
+Verified and handled missing data
+
+The cleaned dataset was exported for use in Power BI.
+
+📊 ## Power BI Dashboard
+The dashboard visualizes key metrics and relationships:
+
+Sales Trends Over Time
+
+Holiday vs Non-Holiday Sales
+
+Store-Level Performance
+
+CPI & Fuel Price Correlations
+
+Interactive Filters for date and store
+
+💡 Business Questions Explored
+Which holidays drive the biggest sales spikes?
+
+Which stores face the highest and lowest unemployment rates—and why?
+
+How does CPI correlate with Weekly Sales, and how does this change during holidays?
+
+What role might Fuel Price play in consumer behavior and sales performance?
+
+📁 Project Structure
+Walmart-Sales-Analysis/
+│
+├── README.md
+├── data/
+│   ├── Walmart_Original.csv
+│   └── Walmart_Cleaned.csv
+├── Walmart.ipynb
+├── PowerBI_Dashboard/
+│   └── Walmart_Sales_Dashboard.pbix
+🛠 Tools Used
+Python: pandas, numpy, matplotlib, seaborn
+
+Power BI: dashboard design, interactive visuals
+
+🚀 Next Steps
+This project lays the foundation for deeper retail analytics. Future enhancements may include:
+
+Time series forecasting
+
+Store clustering
+
+External economic indicators
