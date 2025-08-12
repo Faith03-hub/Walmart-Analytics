@@ -48,15 +48,17 @@ How does CPI correlate with Weekly Sales, and how does this change during holida
 What role might Fuel Price play in consumer behavior and sales performance?
 
 ## 📁 Project Structure
-Walmart-Sales-Analysis/
-│
-├── README.md
-├── data/
-│   ├── Walmart_Original.csv
-│   └── Walmart_Cleaned.csv
-├── Walmart.ipynb
-├── PowerBI_Dashboard/
-│   └── Walmart_Sales_Dashboard.pbix
+Walmart-Sales-Analysis
+
+- README.md
+- data
+
+    - Walmart_Original.csv
+    - Walmart_Cleaned.csv
+      
+- Walmart.ipynb
+- PowerBI_Dashboard
+    - Walmart_Sales_Dashboard.pbix
 ### 🛠 Tools Used
 Python: pandas, numpy, matplotlib, seaborn
 
